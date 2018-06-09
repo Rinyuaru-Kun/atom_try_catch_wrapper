@@ -1,7 +1,7 @@
 {
   "name": "try-catch-wrapper",
   "main": "./lib/try-catch",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A simple shortcut to wrap a portion of code in a try and catch",
   "activationCommands": {
     "atom-text-editor": [
