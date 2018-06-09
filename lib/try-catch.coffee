@@ -6,11 +6,13 @@ module.exports =
     workspace = atom.workspace
     editor = workspace.getActiveTextEditor()
 
+    newLine = System.getProperty("line.separator");
+
     fileName = editor.getTitle()
-    blockStart = "try {\n";
-    blockEnd = "\n
-    } catch (e) {\n
-    //console.log(e)\n
+    blockStart = "try {#{newLine}";
+    blockEnd = "#{newLine}
+    } catch (e) {#{newLine}
+    //console.log(e)#{newLine}
     }";
 
     selection = editor.getLastSelection()
