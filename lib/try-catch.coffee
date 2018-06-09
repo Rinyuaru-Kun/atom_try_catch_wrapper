@@ -6,7 +6,7 @@ module.exports =
     workspace = atom.workspace
     editor = workspace.getActiveTextEditor()
 
-    newLine = System.getProperty("line.separator");
+    newLine = "\r\n";
 
     fileName = editor.getTitle()
     blockStart = "try {#{newLine}";
@@ -31,3 +31,5 @@ module.exports =
        selection.cursor.moveToEndOfLine()
     else
       selection.insertText("#{blockStart+selectionText+blockEnd}", {select: true})
+
+    editor.autoIndentSelectedRows();
