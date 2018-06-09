@@ -10,7 +10,7 @@ module.exports =
     blockStart = "try {\n";
     blockEnd = "\n
     } catch (e) {\n
-    console.log(e)\n
+    //console.log(e)\n
     }";
 
     selection = editor.getLastSelection()
