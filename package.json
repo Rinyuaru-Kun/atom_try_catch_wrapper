@@ -1,0 +1,19 @@
+{
+  "name": "try_catch_wrapper",
+  "version": "0.0.1",
+  "description": "A simple shortcut to wrap a portion of code in a try and catch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheOct0/atom_try_catch_wrapper.git"
+  },
+  "author": "Maël Quéau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheOct0/atom_try_catch_wrapper/issues"
+  },
+  "homepage": "https://github.com/TheOct0/atom_try_catch_wrapper#readme"
+}
