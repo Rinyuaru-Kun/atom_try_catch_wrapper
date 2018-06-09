@@ -10,10 +10,7 @@ module.exports =
 
     fileName = editor.getTitle()
     blockStart = "try {#{newLine}";
-    blockEnd = "#{newLine}
-    } catch (e) {#{newLine}
-    //console.log(e)#{newLine}
-    }";
+    blockEnd = "#{newLine}} catch (e) {#{newLine}//console.log(e)#{newLine}}";
 
     selection = editor.getLastSelection()
     selectionText = selection.getText()
