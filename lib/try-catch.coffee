@@ -24,7 +24,7 @@ module.exports =
     start = selectionText.trim().substr(0, blockStart.length)
     end = selectionText.trim().substr(-1 * blockEnd.length)
 
-    atom.notifications.addWarning(selection);
+    atom.notifications.addWarning(selectionText);
 
     if start is blockStart and end is blockEnd
       replaced = selectionText.trim().substr(blockStart.length)
