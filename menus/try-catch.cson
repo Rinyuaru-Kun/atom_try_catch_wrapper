@@ -1,0 +1,16 @@
+'context-menu':
+  'atom-text-editor': [
+    { 'label': 'Enable Try And Catch', 'command': 'try-catch:toggle' }
+  ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Try And Catch'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'try-catch:toggle' }
+      ]
+    ]
+  }
+]
