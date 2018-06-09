@@ -24,11 +24,13 @@ module.exports =
     start = selectionText.trim().substr(0, blockStart.length)
     end = selectionText.trim().substr(-1 * blockEnd.length)
 
+    atom.notifications.addWarning(selection);
+
     if start is blockStart and end is blockEnd
-       replaced = selectionText.trim().substr(blockStart.length)
-       replaced = replaced.substr(0, replaced.length - blockEnd.length)
-       selection.insertText(replaced, {select: true})
-       selection.cursor.moveToEndOfLine()
+      replaced = selectionText.trim().substr(blockStart.length)
+      replaced = replaced.substr(0, replaced.length - blockEnd.length)
+      selection.insertText(replaced, {select: true})
+      selection.cursor.moveToEndOfLine()
     else
       selection.insertText("#{blockStart+selectionText+blockEnd}", {select: true})
 
